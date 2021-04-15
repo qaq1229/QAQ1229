@@ -1,4 +1,4 @@
-.background{
+﻿.background{
     background-image: url(img/activity/bg.png);
     background-size: 100%;
     background-attachment: fixed;
@@ -9,12 +9,12 @@
 .content{
     background-color: rgb(231, 231, 231);
     position: absolute;
-    top: 400px;
-    left: 225px;
+    top: 500px;
+    left: 350px;
     border-radius: 20px;
     box-shadow: 10px 15px 5px gray;
     height: 2350px;
-    width: 1000px;
+    width: 1015px;
 }
 
 .first-pic{
@@ -74,4 +74,12 @@ td {
 .info:hover{
     opacity: 1;
     transform: scale(2.2);
+}
+
+@media screen and (max-width:1440px){
+.content{
+  
+    top: 400px;
+    left: 225px;
+    width: 1000px;
 }

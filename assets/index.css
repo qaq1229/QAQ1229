@@ -1,81 +1,8 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: serif;
-}
-
-/*導覽列*/
-nav {
-    background-color: #79828a;
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 50px;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.4s;
-    z-index: 1000;
-    border-bottom: 1px solid #E7E7E7;
-}
-nav.sticky {
-    padding: 20px 30px;
-    background: #fff;
-}
-nav .logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    transition: 0.6s;
-}
-nav ul {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 70px;
-}
-.nav-links {
-    flex: 1;
-    text-align: center;
-}
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding:16px 32px;
-    position: relative;
-}
-.nav-links ul li a {
-    position: relative;
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500px;
-    transition: 0.6s;
-    letter-spacing: 2px;
-}
-.nav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: #8E8E8E;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after {
-    width: 100%;
-}
-nav.sticky .logo,
-nav.sticky ul li a {
-    color: #000;
 }
 
 /*首頁大圖框架*/
@@ -96,7 +23,8 @@ nav.sticky ul li a {
 .img-tran:hover{
     opacity: 0.8;
 }
-.mySlides {display:none;}
+.mySlides {display:none;
+width: 700px; height: 385px; margin: 280px 400px;}
 
 
 /*樂學園文字框*/
@@ -106,7 +34,7 @@ nav.sticky ul li a {
     background-color: rgb(221, 221, 221);
     color: #3f3f3f;
     position: absolute;
-    left: 785px;
+    left: 985px;
     top: 395px;
     text-align: center;
     z-index: 10;
@@ -137,7 +65,7 @@ nav.sticky ul li a {
     height: 550px;
     background-image: url(img/banner.jpg);
     position: absolute;
-    left: 100px;
+    left: 300px;
     top: 190px;
     z-index: -1;
     opacity: 0.4;
@@ -165,7 +93,7 @@ nav.sticky ul li a {
     opacity: 0.9;
     position: absolute;
     top: 235px;
-    left: 240px;
+    left: 440px;
     z-index: 5;
 }
 .color-dot2{
@@ -176,7 +104,7 @@ nav.sticky ul li a {
     opacity: 0.9;
     position: absolute;
     top: 620px;
-    left: 775px;
+    left: 975px;
     z-index: 5;
 }
 
@@ -190,7 +118,7 @@ nav.sticky ul li a {
 .h_scroll{
     position: absolute;
     top: 940px;
-    left: 120px;
+    left: 320px;
 }
 .h_scroll h1{
     font-size: 44px;
@@ -198,7 +126,7 @@ nav.sticky ul li a {
 .p_scroll{
     position: absolute;
     top: 1000px;
-    left: 230px;
+    left: 430px;
     width: 550px;
 }
 .p_scroll p{
@@ -210,13 +138,13 @@ nav.sticky ul li a {
 .h2_scroll{
     position: absolute;
     top: 1340px;
-    left: 200px;
+    left: 400px;
     letter-spacing: 5px;
 }
 .p2_scroll{
     position: absolute;
     top: 1385px;
-    left: 400px;
+    left: 600px;
     line-height: 30px;
     width: 290px;
     letter-spacing: 2px;
@@ -232,13 +160,13 @@ nav.sticky ul li a {
 .h3_scroll{
     position: absolute;
     top: 1340px;
-    left: 760px;
+    left: 960px;
     letter-spacing: 5px;
 }
 .p3_scroll{
     position: absolute;
     top: 1385px;
-    left: 960px;
+    left: 1160px;
     line-height: 30px;
     width: 290px;
     letter-spacing: 2px;
@@ -254,13 +182,13 @@ nav.sticky ul li a {
 .up{
     position: absolute;
     top: 1290px;
-    left: 125px;
+    left: 325px;
     font-size: 80px;
 }
 .down{
     position: absolute;
     top: 1780px;
-    left: 1280px;
+    left: 1480px;
     font-size: 80px;
 }
 
@@ -271,7 +199,7 @@ nav.sticky ul li a {
     opacity: 0.7;
     position: absolute;
     top: 1180px;
-    left: 1050px;
+    left: 1250px;
 }
 
 .digit{
@@ -313,7 +241,7 @@ nav.sticky ul li a {
 .img_1{
     position: absolute;
     top: 950px;
-    left: 850px;
+    left: 1050px;
 }
 
 
@@ -395,22 +323,75 @@ nav.sticky ul li a {
     color: #fff;
 }
 
-/*版權列*/
-.footer{
-    width: 100%;
-    height: 150px;
-    background-color: #7a8495;
-    text-align: center;
-    color: #fff;
-    padding: 33px;
-    font-family: sans-serif;
-    z-index: 1000;
+@media screen and (max-width: 1440px){
+
+.mySlides {
+display:none;
+margin: 280px 200px;
+}
+.text-box {
+    left: 785px;
 }
 
-.footer h1{
-    font-size: 18px;
-    margin-bottom: 10px;
+.text-box2 {
+
+    left: 100px;
 }
-.footer p{
-    font-size: 12px;
+
+.b{
+    left: 50px;
 }
+
+.color-dot1{
+
+    left: 240px;
+}
+.color-dot2{
+    left: 775px;
+}
+.h_scroll{
+    left: 120px;
+}
+.p_scroll{
+    left: 230px;
+}
+
+.h2_scroll{
+    left: 200px;
+}
+.p2_scroll{
+    left: 400px;
+}
+.h3_scroll{
+    left: 760px;
+}
+
+.p3_scroll{
+    left: 960px;
+}
+.up{
+    left: 125px;
+}
+.down{
+    left: 1280px;
+}
+.colorbox_scroll{
+    left: 1050px;
+}
+.img_1{
+    left: 850px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
