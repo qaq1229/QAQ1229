@@ -22,7 +22,7 @@ nav {
 nav.sticky {
     padding: 20px 30px;
     background: #fff;
-    border-bottom:3px solid rgb(171, 183, 194);
+    border-bottom:1px solid rgb(175, 176, 179);
 }
 nav .logo {
     position: relative;
@@ -94,7 +94,7 @@ nav.sticky ul li a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(148, 161, 219);
+    background-color: rgb(144, 149, 179);
     width: 200px;
     border-radius: 10px;
     line-height: 30px;
