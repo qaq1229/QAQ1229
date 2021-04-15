@@ -34,30 +34,12 @@
     </header>
 
     <!--內容-->
-    <div class="select" >
-    <button class="tablink" onclick="openPage('Video', this, 'rgb(180,205 ,205)')" id="defaultOpen">影片</button>
-    <button class="tablink" onclick="openPage('Funny', this, 'rgb(159, 182 ,205)')">花絮</button>
-    <button class="tablink" onclick="openPage('Photo', this, 'rgb(169,169,169)')">相片</button>
+    
+<section class="main" id="main">
+    <div class="tabcontent">
+         <video src="/assets/group11.mp4" controls></video>
     </div>
-    
-    
-    <div id="Video" class="tabcontent">
-         <video src="assets/group11.mp4"></video>
-    </div>
-    
-    <div id="Funny" class="tabcontent">
-      
-    </div>
-    
-    <div id="Photo" class="tabcontent">
-        <img class="ph1" src="assets/img/ok.jpg" >
-        <img src="assets/img/ok.jpg" >
-        <img src="assets/img/ok.jpg" >
-    </div>
-        
-    
-     
-
+   </section>
     <!--版權列-->
     <footer>
         <div class="footer">
@@ -75,31 +57,15 @@
             nav.classList.toggle("sticky",window.scrollY > 0);
         })
 
-        
+        const main = document.querySelector('#main');
 
-        function openPage(pageName, elmnt, color) {
-  // Hide all elements with class="tabcontent" by default */
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+            const fade = () => {
+                setTimeout(() => {
+                    body.classList.toggle('fade_out');
+                }, 1500);
+            }
+            body.addEventListener('load', fade());
 
-  // Remove the background color of all tablinks/buttons
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-
-  // Show the specific tab content
-  document.getElementById(pageName).style.display = "block";
-
-  // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
     </script>
 
 </body>
