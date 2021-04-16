@@ -1,11 +1,4 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: serif;
-}
-
-/*首頁大圖框架*/
+﻿/*首頁大圖框架*/
 .box{
     width: 100%;
     height: 100vh;
@@ -251,7 +244,7 @@ width: 700px; height: 385px; margin: 280px 400px;}
     display: flex;
     align-items: center;
     background-color: #fff;
-    margin-top: 340px;
+    margin-top: 450px;
     margin-bottom: 100px;
 }
 .wrap{
@@ -332,18 +325,13 @@ margin: 280px 200px;
 .text-box {
     left: 785px;
 }
-
 .text-box2 {
-
     left: 100px;
 }
-
 .b{
     left: 50px;
 }
-
 .color-dot1{
-
     left: 240px;
 }
 .color-dot2{
@@ -355,7 +343,6 @@ margin: 280px 200px;
 .p_scroll{
     left: 230px;
 }
-
 .h2_scroll{
     left: 200px;
 }
@@ -365,7 +352,6 @@ margin: 280px 200px;
 .h3_scroll{
     left: 760px;
 }
-
 .p3_scroll{
     left: 960px;
 }
@@ -381,17 +367,4 @@ margin: 280px 200px;
 .img_1{
     left: 850px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
