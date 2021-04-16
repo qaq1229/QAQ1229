@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
 	width:100%;
-  background-image: url(/assets/img/zhipic1.jpg);
+  background-image: url(img/zhipic1.jpg);
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -42,8 +42,3 @@
    transition-property: opacity;
    transition-duration: 2s;
  }
-
-@media screen and (max-width:1440px){
-margin: 150px;
-width: 75%;
-}
